@@ -37,9 +37,9 @@ code {
     color: white;
     line-height: 70px;
     letter-spacing: -1px;
-  } 
-  @media (max-width:764px) {
-    .title{
+  }
+  @media (max-width: 764px) {
+    .title {
       font-size: 32px;
       line-height: 40px;
     }
@@ -69,8 +69,14 @@ code {
     line-height: 32px;
   }
 
-  @media (max-width:764px) {
-    .subtitle{
+  @media (max-width: 1024px) {
+    .subtitle {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 764px) {
+    .subtitle {
       font-size: 16px;
     }
   }
@@ -83,6 +89,11 @@ code {
     text-transform: uppercase;
   }
 
+  @media (max-width: 768px) {
+    .features-h1 {
+      text-align: left;
+    }
+  }
   .features-h2 {
     text-align: left;
     font-size: 16px;
@@ -131,8 +142,8 @@ code {
     padding: 36px 35px 23px;
   }
 
-  @media (max-width:640px) {
-    .testimonial-blocks{
+  @media (max-width: 640px) {
+    .testimonial-blocks {
       flex-wrap: wrap;
     }
   }
@@ -158,30 +169,27 @@ code {
     text-transform: uppercase;
   }
 
- 
   .checked {
     margin-bottom: 10px;
     display: flex;
   }
   .unchecked {
-    opacity: .7;
+    opacity: 0.7;
     margin-bottom: 10px;
   }
-  
+
   p {
-    cursor:pointer
+    cursor: pointer;
   }
 
-  .disable-scroll {
-    overflow-y: hidden;
+  .no-scroll {
+    overflow: hidden;
   }
-
-  .scrollable{
-    overflow-y: scroll;
-    height: 200px;
-    background: #f8d0e6;
-    padding: 40px;
+  .section-content {
+    max-height: 100%;
+    overflow-y: auto;
   }
-  
- 
+  html {
+    scroll-behavior: smooth;
+  }
 }
